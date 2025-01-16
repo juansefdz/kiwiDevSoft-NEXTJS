@@ -33,13 +33,15 @@ const Feature = () => {
 									imageUrl: "/assets/projects/SAMI.png",
 									url: "",
 								},
+								{
+									name: "JUANSEFDZ.DEV",
+									description:
+										"Página web de uno de los desarrolladores del equipo de KiwiDEVSOFT",
+									imageUrl: "/assets/projects/juansefdz.png",
+									url: "https://www.juansefdz.dev",
+								},
 							]}
-							languages={{
-								javascript: "/ruta/a/logo-js.png",
-								react: "/ruta/a/logo-react.png",
-								typescript: "/ruta/a/logo-ts.png",
-								nextjs: "/ruta/a/logo-next.png",
-							}}
+							
 						/>
 					</motion.div>
 				</ScrollAnimationWrapper>
