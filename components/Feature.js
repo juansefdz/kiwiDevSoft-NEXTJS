@@ -1,4 +1,4 @@
-import { ProjectCarousel } from "./carrousel";
+import { ProjectCarousel } from "./Carrousel";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -31,7 +31,6 @@ const Feature = () => {
 									description:
 										"SISTEMA AMBULATORIO MEDICO INMEDIATO. solicita ambulancias de una manera ágil y rápida, con la posibilidad de ver la ubicación de la ambulancia en tiempo real.",
 									imageUrl: "/assets/projects/SAMI.png",
-									languages: ["javascript", "react"],
 									url: "",
 								},
 							]}

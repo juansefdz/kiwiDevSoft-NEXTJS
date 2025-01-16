@@ -33,22 +33,13 @@ export const ProjectCarousel = ({ projects, languages }) => {
 								className="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
 							/>
 							<div className="absolute inset-0 group-hover:bg-opacity-70 transition-all duration-300"></div>
-							<div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black bg-opacity-70">
-								<h2 className="text-xl font-bold text-white-500">{project.name}</h2>
-								<p className="mt-2 text-sm text-white-500">{project.description}</p>
-
-								{project.languages.length > 0 && (
-									<div className="flex gap-2 mt-4">
-										{project.languages.map((lang) => (
-											<img
-												key={lang}
-												src={languages[lang]}
-												alt={`${lang} Logo`}
-												className="w-8 h-8"
-											/>
-										))}
-									</div>
-								)}
+							<div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black-600 bg-opacity-90">
+								<h2 className="text-xl font-bold text-white-500">
+									{project.name}
+								</h2>
+								<p className="mt-2 text-sm text-white-500 ">
+									{project.description}
+								</p>
 
 								{project.url && (
 									<a
