@@ -1,0 +1,18 @@
+[
+	{
+		"id": "1",
+		"name": "SAMI",
+		"description": "SISTEMA AMBULATORIO MEDICO INMEDIATO" ,
+		"imageUrl": "/assets/projects/SAMI.png",
+		"languages": ["javascript", "react"],
+		"url": "https://example.com"
+	},
+	{
+		"id": "2",
+		"name": "Proyecto 2",
+		"description": "Descripción del proyecto 2",
+		"imageUrl": "/images/project2.jpg",
+		"languages": ["python", "django"],
+		"url": "https://example.com"
+	}
+]
