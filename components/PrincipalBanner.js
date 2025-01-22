@@ -22,7 +22,6 @@ const Hero = ({
 			number: "5",
 			icon: "/assets/Icon/bx_bxs-server.svg",
 		},
-		
 	],
 }) => {
 	const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -36,7 +35,8 @@ const Hero = ({
 				>
 					<div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
 						<h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-							Todo lo que puedas imaginar es posible con <strong>KIWI DevSoft</strong>.
+							Todo lo que puedas imaginar es posible con{" "}
+							<strong>KIWI DevSoft</strong>.
 						</h1>
 						<p className="text-black-500 mt-4 mb-6">
 							Creemos que todo es posible cuando combinamos creatividad,
@@ -46,8 +46,25 @@ const Hero = ({
 						</p>
 						<ButtonPrimary>Contactanos</ButtonPrimary>
 					</div>
-					<div className="flex w-full">
-						<motion.div className="h-full w-full" variants={scrollAnimation}>
+					<div className="relative flex w-full">
+						<motion.div className="absolute inset-0 z-0">
+							<svg
+								viewBox="0 0 200 200"
+								xmlns="http://www.w3.org/2000/svg"
+								className="w-full h-full scale-150"
+							>
+								<path
+									fill="#00f400"
+									d="M42.1,-61.7C48.8,-53.2,44.5,-33.1,48.2,-16.8C52,-0.5,64,12.1,62.5,21.5C61.1,31,46.4,37.2,33.7,40.5C21.1,43.8,10.5,44.1,-0.5,44.8C-11.6,45.5,-23.2,46.7,-33.3,42.6C-43.4,38.5,-52,29.1,-61.2,16.2C-70.3,3.4,-80.1,-12.9,-75.6,-23.9C-71.2,-35,-52.5,-40.8,-37.6,-46.6C-22.6,-52.5,-11.3,-58.3,3.2,-62.7C17.7,-67.2,35.5,-70.2,42.1,-61.7Z"
+									transform="translate(100 100)"
+								/>
+							</svg>
+						</motion.div>
+
+						<motion.div
+							className="relative z-10 h-full w-full"
+							variants={scrollAnimation}
+						>
 							<Image
 								src="/assets/Illustration1.png"
 								alt="LOGO KIWIDEVSOFT"

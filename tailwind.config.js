@@ -37,7 +37,7 @@ module.exports = {
 			},
 			lime: {
 				100: "#F0FFF4",
-				500: "#00FF00",
+				500: "#00f400",
 			},
 		},
 		extend: {},
