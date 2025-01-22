@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -44,7 +45,9 @@ const Hero = ({
 							software; somos tus aliados en convertir ideas en soluciones
 							reales, impactantes y transformadoras.
 						</p>
-						<ButtonPrimary>Contactanos</ButtonPrimary>
+						<ButtonPrimary>
+							<Link href="#contact">Contáctanos</Link>
+						</ButtonPrimary>
 					</div>
 					<div className="relative flex w-full">
 						<motion.div className="absolute inset-0 z-0">

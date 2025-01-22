@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-export const ProjectCarousel = ({ projects, languages }) => {
+export const ProjectCarousel = ({ projects }) => {
 	return (
 		<div className="container flex justify-center px-4 mx-auto shadow-lg rounded-lg">
 			<Swiper

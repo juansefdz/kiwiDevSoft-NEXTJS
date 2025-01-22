@@ -1,8 +1,13 @@
-import { ProjectCarousel } from "./Carrousel";
+import dynamic from "next/dynamic";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+
+const ProjectCarousel = dynamic(
+	() => import("./Carrousel").then((mod) => mod.ProjectCarousel),
+	{ ssr: false }
+);
 
 const features = [
 	"Escalabilidad y mantenibilidad",
@@ -21,7 +26,7 @@ const Feature = () => {
 			className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
 			id="feature"
 		>
-			<div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
+			<div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
 				<ScrollAnimationWrapper className="flex w-full justify-end">
 					<motion.div className="h-full w-full p-4" variants={scrollAnimation}>
 						<ProjectCarousel
@@ -29,7 +34,7 @@ const Feature = () => {
 								{
 									name: "SAMI",
 									description:
-										"SISTEMA AMBULATORIO MEDICO INMEDIATO. solicita ambulancias de una manera ágil y rápida, con la posibilidad de ver la ubicación de la ambulancia en tiempo real.",
+										"SISTEMA AMBULATORIO MEDICO INMEDIATO. Solicita ambulancias de una manera ágil y rápida, con la posibilidad de ver la ubicación de la ambulancia en tiempo real.",
 									imageUrl: "/assets/projects/SAMI.png",
 									url: "",
 								},
@@ -41,7 +46,6 @@ const Feature = () => {
 									url: "https://www.juansefdz.dev",
 								},
 							]}
-							
 						/>
 					</motion.div>
 				</ScrollAnimationWrapper>
