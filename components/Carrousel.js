@@ -3,22 +3,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import React from "react";
 
-type Project = {
-	name: string;
-	imageUrl: string;
-	description: string;
-	url?: string;
-};
-
-type ProjectCarouselProps = {
-	projects: Project[];
-};
-
-export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
-	projects,
-}) => {
+export const ProjectCarousel = ({ projects }) => {
 	return (
 		<div className="container flex justify-center px-4 mx-auto shadow-lg rounded-lg">
 			<Swiper
@@ -51,7 +37,7 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 								<h2 className="text-xl font-bold text-white-500">
 									{project.name}
 								</h2>
-								<p className="mt-2 text-sm text-white-500">
+								<p className="mt-2 text-sm text-white-500 ">
 									{project.description}
 								</p>
 
