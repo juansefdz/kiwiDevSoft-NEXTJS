@@ -5,7 +5,7 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const ProjectCarousel = dynamic(
-	() => import("./Carrousel").then((mod) => mod.ProjectCarousel),
+	() => import("./Carrousel.tsx").then((mod) => mod.ProjectCarousel),
 	{ ssr: false }
 );
 
